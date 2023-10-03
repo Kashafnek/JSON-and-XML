@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj = {
+    "myfile":[
+        {"file":{
+            "name": "Aima",
+            "id": "13",
+            "class": "12"
+         }
+        },
+        {"file":{
+            "name": "Aina",
+            "id": "87",
+            "class": "12"
+         }
+        },
+        {"file":{
+            "name": "Aiman",
+            "id": "18",
+            "class": "11"
+         }
+        },
+        {"file":{
+            "name": "Aiza",
+            "id": "21",
+            "class": "11"
+         }
+        },
+        {"file":{
+            "name": "Abeer",
+            "id": "75",
+            "class": "10"
+         }
+        },
+        {"file":{
+            "name": "Abeera",
+            "id": "20",
+            "class": "10"
+         }
+        },
+        {"file":{
+            "name": "Areesha",
+            "id": "55",
+            "class": "9"
+         }
+        },
+        {"file":{
+            "name": "Areeba",
+            "id": "40",
+            "class": "9"
+         }
+        }
+    ]
+}
+    </script>
+    <table border="1" cellpadding="20">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Id</th>
+                <th>Class</th>
+            </tr>
+        </thead>
+        <tbody>
+            <script>
+                for(var index in obj.myfile){
+                    document.write("<tr>");
+                    document.write("<td>" + obj.myfile[index].file.name + "</td>");
+                    document.write("<td>" + obj.myfile[index].file.id + "</td>");
+                    document.write("<td>" + obj.myfile[index].file.class + "</td>");
+                    document.write("</tr>");
+                  }
+            </script>
+        </tbody>
+    </table>
+</body>
+</html>
